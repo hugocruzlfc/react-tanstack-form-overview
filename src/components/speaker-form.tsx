@@ -57,7 +57,18 @@ export function SpeakerForm() {
                             onChange={(e) =>
                               subField.handleChange(e.target.value)
                             }
+                            onBlur={subField.handleBlur}
                           />
+                          {subField.state.meta.errors.map(
+                            (error, errorIndex) => (
+                              <p
+                                key={`${subField.name}-error-${errorIndex}`}
+                                className="mt-2 text-sm text-red-400"
+                              >
+                                {error?.message}
+                              </p>
+                            ),
+                          )}
                         </div>
                       )}
                     </form.Field>
@@ -71,7 +82,18 @@ export function SpeakerForm() {
                             onChange={(e) =>
                               subField.handleChange(e.target.value)
                             }
+                            onBlur={subField.handleBlur}
                           />
+                          {subField.state.meta.errors.map(
+                            (error, errorIndex) => (
+                              <p
+                                key={`${subField.name}-error-${errorIndex}`}
+                                className="mt-2 text-sm text-red-400"
+                              >
+                                {error?.message}
+                              </p>
+                            ),
+                          )}
                         </div>
                       )}
                     </form.Field>

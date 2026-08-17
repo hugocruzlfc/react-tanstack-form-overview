@@ -1,3 +1,4 @@
+import { ReactivityForm } from "./components/reactivity-form";
 import { RefRegistrationForm } from "./components/ref-registration-form";
 import { SpeakerForm } from "./components/speaker-form";
 import { StandardRegistrationForm } from "./components/standard-registration-form";
@@ -8,6 +9,7 @@ function App() {
       <StandardRegistrationForm />
       <RefRegistrationForm />
       <SpeakerForm />
+      <ReactivityForm />
     </div>
   );
 }
