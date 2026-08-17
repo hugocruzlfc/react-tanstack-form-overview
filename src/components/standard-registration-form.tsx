@@ -20,6 +20,11 @@ export function StandardRegistrationForm() {
     }));
   };
 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Submitted Data:", formData);
+  };
+
   return (
     <div className="bg-neutral-900 border border-neutral-800 rounded-xl p-6 w-full max-w-md mx-auto mt-10 text-white">
       <div className="mb-6">
@@ -27,7 +32,7 @@ export function StandardRegistrationForm() {
         <p className="text-sm text-neutral-400">Standard Controlled Form</p>
       </div>
 
-      <form className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-4">
         {/* First Name */}
         <div className="flex flex-col gap-2">
           <label className="text-sm font-medium text-neutral-300">
@@ -67,8 +72,8 @@ export function StandardRegistrationForm() {
         </div>
 
         <button
-          type="button"
-          className="w-full mt-4 bg-neutral-800 text-neutral-400 py-2 rounded-md font-bold cursor-not-allowed"
+          type="submit"
+          className="w-full mt-4 bg-neutral-800 text-white py-2 rounded-md font-bold hover:bg-neutral-700 transition-colors"
         >
           Sign Up
         </button>
