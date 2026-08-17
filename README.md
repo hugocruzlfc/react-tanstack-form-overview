@@ -71,20 +71,3 @@ The application will be running locally at `http://localhost:5173`.
 ├── vite.config.ts       # Vite configuration
 └── package.json         # Dependencies and scripts
 ```
-
----
-
-## 📖 Learn React 19
-
-Need a refresher or want to learn the new features in React 19? Check out this playlist:
-
-🎬 **[Learn React 19 With Code on YouTube](https://www.youtube.com/watch?v=hiiGUjEkzbM&list=PLIJrr73KDmRw-T8bdJn3XxVMbH-zlooKb)**
-
----
-
-## 🫶 Support & Sponsorship
-
-If you find this boilerplate useful, please show your support:
-
-- **Give a Star:** Star this repository (⭐) on GitHub!
-- **Sponsor my work:** I am an independent educator and open-source enthusiast creating programming tutorials. Support me by [sponsoring me on GitHub Sponsors](https://github.com/sponsors/atapas).
